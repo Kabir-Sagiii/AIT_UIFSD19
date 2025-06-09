@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+    <style>
+      body {
+        height: 1500px;
+      }
+      div {
+        box-shadow: 0 0 10px green;
+        padding: 20px;
+        width: 300px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Forms Concept</h2>
+
+    <form>
+      <div>
+        <h2>data list</h2>
+        <input type="textbox" list="mylist" />
+
+        <datalist id="mylist">
+          <option>html</option>
+          <option>css</option>
+          <option>react</option>
+          <option>redux</option>
+          <option>java</option>
+        </datalist>
+      </div>
+
+      <div>
+        <h2>File</h2>
+        <input type="file" placeholder="username" multiple />
+      </div>
+      <div>
+        <h2>textarea</h2>
+        <textarea cols="30" rows="9"></textarea>
+      </div>
+      <div>
+        <h2>Attributes</h2>
+        <input
+          type="text"
+          required
+          minlength="5"
+          maxlength="8"
+          size="4"
+          value="Kabir"
+          readonly
+        />
+      </div>
+      <div>
+        <h2>Progress</h2>
+        <progress min="0" max="100" value="90"></progress>
+      </div>
+      <div>
+        <h2>Drop Down</h2>
+        <select>
+          <option value="hyd">Hyderabad City</option>
+          <option value="pune">pune</option>
+          <option value="banglore">banglore</option>
+          <option value="mumbai">mumbai</option>
+        </select>
+      </div>
+      <div>
+        <h2>Button</h2>
+        <input type="button" value="Login" />
+        <input type="reset" />
+        <input type="submit" />
+      </div>
+      <div>
+        <h2>Timer</h2>
+        <input type="time" placeholder="username" />
+      </div>
+      <div>
+        <h2>Calender</h2>
+        <input type="date" placeholder="username" />
+      </div>
+      <div>
+        <h2>Checkbox Button</h2>
+        <input type="checkbox" id="html" checked />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" checked />
+        <label for="css">css</label>
+
+        <input type="checkbox" id="js" />
+        <label for="js">js</label>
+      </div>
+      <div>
+        <h2>Radio Button</h2>
+        <input type="radio" id="male" name="gender" checked />
+        <label for="male">male</label>
+
+        <input type="radio" id="female" name="gender" />
+        <label for="female">female</label>
+
+        <input type="radio" id="other" name="gender" />
+        <label for="other">other</label>
+      </div>
+
+      <div>
+        <h2>text-box</h2>
+        <input placeholder="username" />
+      </div>
+      <div>
+        <h2>password-box</h2>
+        <input type="password" placeholder="password" />
+      </div>
+
+      <div>
+        <h2>email-box</h2>
+        <input type="email" placeholder="email id" />
+      </div>
+
+      <div>
+        <h2>number-box</h2>
+        <input type="number" />
+      </div>
+    </form>
+  </body>
+</html>
