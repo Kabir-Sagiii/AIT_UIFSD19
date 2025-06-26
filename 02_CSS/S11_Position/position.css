@@ -1,0 +1,14 @@
+html {
+  border: 6px solid red;
+  height: 530px;
+}
+div {
+  border: 3px solid blue;
+  margin: 30px 5px;
+  padding: 10px;
+  width: 400px;
+}
+img {
+  position: absolute;
+  top: 50px;
+}
