@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 0 10px red;
+        margin: 150px auto;
+        background-color: black;
+        transition-property: transform;
+        transition-duration: 3s;
+        /* transition-delay: 1s; */
+      }
+
+      #box:hover {
+        background-color: red;
+        /* transform: translate(-400px, 400px); */
+        /* transform: translateX(400px); */
+        /* transform: rotate(-180deg); */
+        /* transform: rotateY(180deg); */
+        transform: scale(0.5);
+      }
+      /* input:focus {
+        background-color: black;
+        color: white;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div id="box"></div>
+    <br />
+    <!-- <input placeholder="username" /> -->
+  </body>
+</html>

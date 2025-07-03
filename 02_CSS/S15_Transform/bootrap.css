@@ -1,0 +1,15 @@
+body {
+  padding: 50px;
+}
+.mybtn {
+  padding: 10px 20px;
+  background-color: white;
+  color: green;
+  font-size: 17px;
+  border: 0.5px solid green;
+  border-radius: 5px;
+}
+.mybtn:hover {
+  background-color: green;
+  color: white;
+}

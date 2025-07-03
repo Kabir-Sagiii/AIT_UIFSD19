@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.nav {
+  height: 80px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+}
+#brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#brand h1 {
+  font-size: 37px;
+  color: cornsilk;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#icons i {
+  margin-right: 20px;
+}
+#icons button {
+  padding: 10px 30px;
+  background: none;
+  border: 2px solid red;
+  border-radius: 10px;
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+#links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#links a {
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+}
+
+#categories {
+  height: 100px;
+  width: 1200px;
+  margin: 30px auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+}
+
+#adContainer {
+  width: 1200px;
+  height: 400px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px black;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("https://petapixel.com/assets/uploads/2017/03/product1.jpeg");
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#adContainer h1,
+#adContainer p {
+  color: cornsilk;
+}
+
+#adContainer h1 {
+  font-size: 52px;
+}
+#adContainer p {
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+}
+#products {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 270px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  padding: 10px 10px 30px;
+  background-color: black;
+  color: white;
+}
+.card h3 {
+  margin: 10px 0px;
+
+  color: green;
+}
+
+.card p {
+  margin: 10px 0px 15px;
+}
+.card button {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: 2px solid green;
+}
+
+.footer {
+  background-color: #111827;
+  color: #ccc;
+  padding: 60px 20px 30px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-box h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-box p,
+.footer-box li,
+.footer-box a {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box a:hover {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-box.about .logo {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-box.contact p i {
+  margin-right: 10px;
+  color: #00bcd4;
+}
+
+.social-icons a {
+  color: #ccc;
+  margin-right: 12px;
+  font-size: 16px;
+  display: inline-block;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  color: #00bcd4;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #2e3742;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #999;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer-box.about,
+  .footer-box.links,
+  .footer-box.contact,
+  .footer-box.social {
+    margin-bottom: 30px;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+}

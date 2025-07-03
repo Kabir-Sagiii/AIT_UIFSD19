@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: black;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+      }
+
+      @media not screen {
+        body {
+          background-color: lightsalmon;
+        }
+        h1 {
+          color: green;
+        }
+      }
+
+      @media only print {
+        body {
+          background-color: white;
+        }
+        h1 {
+          color: red;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to CSS</h1>
+  </body>
+</html>
