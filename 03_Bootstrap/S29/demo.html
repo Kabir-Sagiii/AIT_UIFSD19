@@ -1,0 +1,21 @@
+<style>
+  button {
+    background-color: black;
+    color: white;
+  }
+  input {
+    border: 2px solid red;
+  }
+</style>
+<button onclick="f1()">Login</button>
+<input placeholder="username" /><br />
+<script>
+  function f1() {
+    var img = document.createElement("img");
+    img.src = "https://wallpaperaccess.com/full/155161.jpg";
+    img.width = "300";
+    img.height = "300";
+
+    document.querySelector("body").appendChild(img);
+  }
+</script>
