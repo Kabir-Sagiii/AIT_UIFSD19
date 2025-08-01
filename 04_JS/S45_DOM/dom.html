@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function modifyDOM() {
+        //1.Access Dom Elements
+        var h2DomElement = document.querySelector("h2");
+        var pDomElement = document.querySelector("p");
+        var buttonDomElement = document.querySelector("button");
+        var listItemDomElement = document.querySelector("li");
+        var image = document.querySelector("img");
+
+        //2.modify dom elements
+        h2DomElement.innerText = "Javascript is super super easy";
+        pDomElement.innerText = `This marks a significant milestone in our commitment to transparency and community collaboration. By open sourcing the extension, we're enabling the community to:`;
+        buttonDomElement.innerText = "Document Modified";
+        listItemDomElement.innerText = "JS is a Programming Language";
+        image.src =
+          "https://facts.net/wp-content/uploads/2024/07/40-facts-about-rohit-sharma-1719887759.jpg";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h2>DOCUMENT OBJECT MODEL</h2>
+      <img
+        src="https://d1vd9vlqo1765y.cloudfront.net/blog/shubman-gill.jpg"
+        alt=""
+        width="500"
+        height="300"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quisquam
+        earum, deleniti, eius sunt nihil blanditiis minus in consequatur ad
+        accusamus expedita qui? Vitae omnis beatae iure incidunt quod, tempore
+        sint sequi qui officia, voluptatum fugiat natus nostrum facilis quam
+        quidem error! Sint eos excepturi ipsa ad accusantium deleniti sequi?
+      </p>
+      <ol>
+        <li>html is a Language</li>
+      </ol>
+      <button onclick="modifyDOM()">Explore More</button>
+    </div>
+  </body>
+</html>
