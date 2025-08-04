@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeColor() {
+        var h1Array = document.querySelectorAll(".blue");
+
+        // var h1Array = document.getElementsByTagName("h1");
+
+        var heading2DomElement = h1Array[1];
+
+        heading2DomElement.style.color = "coral";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 class="blue">First Heading</h1>
+
+    <h1 class="blue">Second Heading</h1>
+    <button onclick="changeColor()">Change Color</button>
+  </body>
+</html>

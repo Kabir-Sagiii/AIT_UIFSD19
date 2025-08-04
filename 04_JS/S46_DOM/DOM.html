@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function modifyHeading() {
+        var count = 0;
+        var h1DomElement = document.querySelector("h1");
+
+        h1DomElement.innerText = "Document Object Model";
+        h1DomElement.style.color = "red";
+
+        for (var key in h1DomElement) {
+          //   console.log(key);
+          count++;
+        }
+        console.log(count);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>DOM</h1>
+    <button onclick="modifyHeading()">Modify</button>
+  </body>
+</html>

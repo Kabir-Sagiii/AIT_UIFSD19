@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function hidePassord() {
+        var inputDomElement = document.getElementById("username");
+        var h2Array = document.getElementsByClassName("title");
+        var button = document.getElementById("submitBtn");
+
+        if (inputDomElement.type === "text") {
+          button.innerText = "Show Password";
+          inputDomElement.type = "password";
+          h2Array[0].innerText = "Password Hidden";
+        } else {
+          button.innerText = "Hide Password";
+          inputDomElement.type = "text";
+          h2Array[0].innerText = " Password Shown";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2 class="title">getElementById</h2>
+    <input type="text" id="username" placeholder="Enter your username" />
+    <button id="submitBtn" onclick="hidePassord()">Hide Password</button>
+  </body>
+</html>
