@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button in JavaScript</title>
+    <script>
+      function createUI() {
+        // Create a button element
+        const button = document.createElement("button");
+        button.innerText = "JavaScript Button";
+        button.onclick = function () {
+          var img = document.createElement("img");
+          img.src =
+            "https://images.samsung.com/is/image/samsung/assets/my/smartphones/galaxy-z-fold6/buy/Color_Selection_Silver_MO.png?imbypass=true";
+          img.width = "150";
+          img.height = "150";
+          document.querySelector("body").appendChild(img);
+        };
+
+        // Create an ordered list
+        const ol = document.createElement("ol");
+
+        const li1 = document.createElement("li");
+        const li2 = document.createElement("li");
+        const li3 = document.createElement("li");
+        const li4 = document.createElement("li");
+
+        li1.innerText = "html";
+        li2.innerText = "css";
+        li3.innerText = "js";
+        li4.innerText = "reactjs";
+
+        // Append list items to the ordered list
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+        ol.appendChild(li3);
+        ol.appendChild(li4);
+
+        // Append the button to the body
+        document.querySelector("body").appendChild(button);
+        // Append the ordered list to the body
+        document.querySelector("body").appendChild(ol);
+      }
+
+      function reuseUI() {
+        createUI();
+        createUI();
+        createUI();
+        createUI();
+        createUI();
+      }
+    </script>
+  </head>
+
+  <body onload="reuseUI()"></body>
+</html>

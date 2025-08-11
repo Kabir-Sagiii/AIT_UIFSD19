@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 500px;
+        padding: 50px;
+        margin: 50px auto;
+        box-shadow: 0 0 10px black;
+      }
+    </style>
+    <script>
+      function getData() {
+        var input = document.getElementById("nameInput");
+        var textBoxValue = input.value;
+
+        var p = document.getElementById("inputContent");
+
+        p.innerText = textBoxValue;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h2>Task on DOM</h2>
+      <input type="text" placeholder="Enter Name" id="nameInput" />
+      <button onclick="getData()">Submit</button>
+
+      <p id="inputContent"></p>
+    </div>
+  </body>
+</html>
