@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- <script>
+      var div = React.createElement("div", null, [
+        React.createElement("h2", null, "Heading Element"),
+        React.createElement(
+          "p",
+          null,
+          "This is a Paragraph element created using React JS"
+        ),
+      ]);
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script> -->
+
+    <script>
+      var h2 = React.createElement("h2", null, "Heading Element");
+
+      var p = React.createElement(
+        "p",
+        null,
+        "This is a Paragraph element created using React JS"
+      );
+
+      var div = React.createElement("div", null, [h2, p]);
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>

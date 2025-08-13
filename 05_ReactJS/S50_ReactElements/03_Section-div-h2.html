@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #mainContainer {
+        border: 2px solid green;
+        padding: 20px;
+      }
+      #subContainer {
+        border: 2px solid blue;
+        padding: 20px;
+      }
+      #title {
+        border: 2px solid red;
+        padding: 10px;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      const section = React.createElement(
+        "section",
+        { id: "mainContainer" },
+        React.createElement(
+          "div",
+          { id: "subContainer" },
+          React.createElement(
+            "h2",
+            { id: "title" },
+            "h2 inside the div and div inside the section"
+          )
+        )
+      );
+
+      ReactDOM.render(section, document.getElementById("root"));
+    </script>
+  </body>
+</html>

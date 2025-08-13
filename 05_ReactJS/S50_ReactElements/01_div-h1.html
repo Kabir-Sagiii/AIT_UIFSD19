@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        border: 2px solid red;
+        padding: 20px;
+      }
+      h1 {
+        border: 2px solid blue;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- <script>
+      var div = React.createElement(
+        "div",
+        { id: "container" },
+        React.createElement("h1", null, "h1 inside the div")
+      );
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script> -->
+
+    <script>
+      var h1 = React.createElement(
+        "h1",
+        null,
+        "h1 inside the div with approach 2"
+      );
+
+      var div = React.createElement("div", { id: "container" }, h1);
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>
