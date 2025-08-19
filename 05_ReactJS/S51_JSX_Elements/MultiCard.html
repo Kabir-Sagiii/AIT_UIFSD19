@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .card {
+        width: 270px;
+        height: 330px;
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      //card
+      const card = (
+        <div className="card">
+          <img
+            src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX8345167.jpg"
+            alt=""
+            width="100%"
+            height="250"
+          />
+          <h3>Rohan Sharma </h3>
+        </div>
+      );
+
+      var container = (
+        <div id="container">
+          {card}
+          {card}
+          {card}
+          {card}
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

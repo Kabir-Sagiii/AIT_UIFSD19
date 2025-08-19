@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .card {
+        width: 270px;
+        height: 330px;
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createCard(image, title) {
+        return (
+          <div className="card">
+            <img src={image} alt="" width="100%" height="250" />
+            <h3>{title} </h3>
+          </div>
+        );
+      }
+
+      var cardContainer = (
+        <div id="container">
+          {createCard(
+            "https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX8345167.jpg",
+            "Rahul Khanna"
+          )}
+          {createCard(
+            "https://static.vecteezy.com/system/resources/previews/038/974/578/non_2x/ai-generated-professional-portrait-of-a-competent-woman-free-photo.jpg",
+            "Somya Singh"
+          )}
+          {createCard(
+            "https://static.vecteezy.com/system/resources/thumbnails/036/075/988/small_2x/ai-generated-portrait-of-beautiful-businesswoman-in-modern-office-generative-ai-free-photo.jpg",
+            "Riya Patel"
+          )}
+          {createCard(
+            "https://img.freepik.com/premium-photo/female-business-woman-workplace_115919-44065.jpg",
+            "Sneha Reddy"
+          )}
+        </div>
+      );
+
+      ReactDOM.render(cardContainer, document.getElementById("root"));
+    </script>
+  </body>
+</html>

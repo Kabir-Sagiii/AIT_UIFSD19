@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createUI(list1, list2, list3, list4) {
+        return (
+          <ol>
+            <li>{list1}</li>
+            <li>{list2}</li>
+            <li>{list3}</li>
+            <li>{list4}</li>
+          </ol>
+        );
+      }
+
+      var container = (
+        <div>
+          {createUI("html", "css", "js", "react")}
+          {createUI("nodejs", "springboot", "django", "asp.net")}
+          {createUI("mongodb", "oracle", "mysql", "sql server")}
+          {createUI("aws", "azure", "gcp", "firebase")}
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>
