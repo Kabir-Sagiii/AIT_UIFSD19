@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./Container.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function CreateContainer(props) {
+        //props = {title:"----",content:""}
+        return (
+          <div className="container">
+            <h1>
+              {props.title} {props.content}
+            </h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              fugit sapiente aspernatur voluptatem iure officiis repudiandae,
+              delectus modi nam reprehenderit ut molestiae quasi repellendus
+              corrupti! Veritatis, vel qui amet similique, minus dolores facilis
+              aliquid possimus modi alias laboriosam ipsum necessitatibus ad
+              explicabo quod! Animi pariatur velit dolorum nihil. Quia,
+              repellendus. Deserunt molestiae aliquid sapiente a neque nostrum
+              placeat fugit minima ut officia error magni magnam commodi nisi
+              exercitationem, nemo nihil voluptatibus velit! Reprehenderit cum
+              autem ratione repudiandae molestias odit repellat qui laboriosam
+              atque laudantium dolores eaque, quas quaerat explicabo quia non
+              sequi distinctio harum incidunt magni vel, aspernatur tempore!
+              Repellendus!
+            </p>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div id="app">
+            <CreateContainer title={"HTML Section"} content={100} />
+
+            <CreateContainer
+              title={"CSS Section"}
+              content={200}
+            ></CreateContainer>
+
+            <CreateContainer title={"JS Section"} content={300} />
+
+            <CreateContainer title={"REACT Section"} content={400} />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

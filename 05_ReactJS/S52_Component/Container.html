@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./Container.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createContainer() {
+        return (
+          <div className="container">
+            <h1>HTML SECTION</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              fugit sapiente aspernatur voluptatem iure officiis repudiandae,
+              delectus modi nam reprehenderit ut molestiae quasi repellendus
+              corrupti! Veritatis, vel qui amet similique, minus dolores facilis
+              aliquid possimus modi alias laboriosam ipsum necessitatibus ad
+              explicabo quod! Animi pariatur velit dolorum nihil. Quia,
+              repellendus. Deserunt molestiae aliquid sapiente a neque nostrum
+              placeat fugit minima ut officia error magni magnam commodi nisi
+              exercitationem, nemo nihil voluptatibus velit! Reprehenderit cum
+              autem ratione repudiandae molestias odit repellat qui laboriosam
+              atque laudantium dolores eaque, quas quaerat explicabo quia non
+              sequi distinctio harum incidunt magni vel, aspernatur tempore!
+              Repellendus!
+            </p>
+          </div>
+        );
+      }
+
+      function app() {
+        return (
+          <div>
+            {createContainer()}
+            {createContainer()}
+            {createContainer()}
+            {createContainer()}
+            {createContainer()}
+          </div>
+        );
+      }
+
+      //   const containers = (
+      //     <div>
+      //       {createContainer()},{createContainer()},{createContainer()},
+      //       {createContainer()}
+      //     </div>
+      //   );
+
+      ReactDOM.render(app(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
