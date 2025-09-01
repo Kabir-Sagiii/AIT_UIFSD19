@@ -1,0 +1,20 @@
+.users-container {
+  padding: 50px;
+}
+.users-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  width: 230px;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+}
+.card h3 {
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
