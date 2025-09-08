@@ -1,0 +1,40 @@
+.home {
+  height: 85vh;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/premium-photo/ecommerce-background_965427-2217.jpg?w=2000");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home h1 {
+  font-size: 72px;
+  color: cornsilk;
+}
+.home p {
+  text-align: center;
+  color: white;
+  font-size: 21px;
+  font-weight: lighter;
+
+  width: 80%;
+  margin: 10px auto 30px;
+}
+.home button {
+  padding: 13px 20px;
+  background: none;
+  color: white;
+  font-size: 17px;
+  /* background-color: green; */
+  border: 2px solid green;
+  border-radius: 7px;
+  box-shadow: 0 0 10px red;
+}
