@@ -1,0 +1,77 @@
+.login-container {
+  text-align: center;
+}
+
+.login-box {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  padding: 40px;
+  width: 350px;
+  margin-bottom: 10px;
+  margin: 30px auto;
+}
+
+.logo {
+  width: 175px;
+  margin-bottom: 30px;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  border-radius: 3px;
+}
+
+.login-form button {
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 13px;
+  color: #8e8e8e;
+}
+
+.facebook-login {
+  background: none;
+  border: none;
+  color: #385185;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #00376b;
+  text-decoration: none;
+}
+
+.signup-box {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  width: 350px;
+  font-size: 14px;
+  margin: auto;
+}
+
+.signup-box a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: 500;
+}

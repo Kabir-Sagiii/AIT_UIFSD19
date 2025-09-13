@@ -1,5 +1,5 @@
 import "./App.css";
-
+import { useState } from "react";
 import Navbar from "./components/nav-bar/Navbar.jsx";
 import Products from "./pages/products/Products.jsx";
 import Signin from "./pages/sign-in/Signin.jsx";
@@ -11,13 +11,30 @@ import Contact from "./pages/contact/Contact.jsx";
 import ProductDetails from "./pages/product-details/ProductDetails.jsx";
 import A from "./components/context-api/A.jsx";
 import MyContainer from "./components/context-api/example-2/MyContainer.jsx";
+import loginContext from "./components/context-api/example-2/loginContext.js";
+import UseRefComp from "./components/use-ref/UseRefComp.jsx";
+import RefDom from "./components/use-ref/RefDom.jsx";
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const login = () => {
+    setIsLoggedIn(true);
+  };
+
+  const logout = () => {
+    setIsLoggedIn(false);
+  };
+
   return (
     <div className="app">
-      {/* <Navbar /> */}
-      {/* <MyContainer /> */}
-
       <Navbar />
+      {/* <RefDom />
+      <UseRefComp /> */}
+
+      {/* <loginContext.Provider value={{ login, logout, isLoggedIn }}>
+        {isLoggedIn ? <Navbar /> : null}
+        <MyContainer />
+      </loginContext.Provider> */}
 
       <Routes>
         <Route path={"/"} element={<Home />} />
