@@ -1,0 +1,26 @@
+.bgImage1 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://static.vecteezy.com/system/resources/previews/027/100/112/large_2x/collection-of-baby-and-kids-toys-displayed-on-a-white-background-the-view-is-from-the-top-and-free-photo.jpg");
+}
+.bgImage2 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://static.vecteezy.com/system/resources/thumbnails/039/653/307/small_2x/ai-generated-adorable-frame-of-baby-and-kids-toys-set-against-a-playful-background-ai-generated-photo.jpg");
+}
+.bgImage3 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://wallpapercave.com/wp/wp8575689.jpg");
+}
+.bgImage4 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://www.dior.com/couture/var/dior/storage/images/childrens-fashion/girls/12088254-150-eng-GB/girls_width_1400.jpg");
+}
+.bgImageContainer {
+  width: 1000px;
+  margin: 30px auto;
+  height: 430px;
+  box-shadow: 0 0 10px black;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
