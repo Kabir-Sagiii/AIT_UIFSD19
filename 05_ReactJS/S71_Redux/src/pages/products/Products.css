@@ -1,0 +1,82 @@
+.bgImage-1 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://img.freepik.com/premium-photo/flat-lay-various-electronics-blue-background_14117-648287.jpg");
+}
+.bgImage-2 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://i.pinimg.com/originals/96/53/f6/9653f6102b68c96dd8f59808b3ceed9d.jpg");
+}
+.bgImage-3 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://wallpaperaccess.com/full/1448061.jpg");
+}
+.bgImage-4 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://wallpapercave.com/wp/wp6130531.jpg");
+}
+.products-ad {
+  height: 470px;
+  box-shadow: 0 0 10px black;
+  width: 1100px;
+  margin: 20px auto;
+  /* background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://img.freepik.com/premium-photo/flat-lay-various-electronics-blue-background_14117-648287.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-ad h2,
+p {
+  color: white;
+  text-align: center;
+}
+.products-ad h2 {
+  font-size: 52px;
+  margin-bottom: 13px;
+}
+.products-ad p {
+  font-size: 18px;
+  width: 1100px;
+}
+.products-categories {
+  width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.products-data {
+  width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.products-data .card {
+  width: 270px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+.products-data .card h3 {
+  margin: 20px 0px;
+}
+.products-data .card button {
+  margin: 15px 10px 15px 0px;
+  padding: 9px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.products-data .card img:hover {
+  transform: scale(1.3);
+}
