@@ -1,0 +1,19 @@
+Login API :POST
+==========
+http://localhost:5001/auth/sign-in
+
+Sign up API : POST
+============
+http://localhost:5001/auth/sign-up
+
+Add to Cart API : POST
+================
+http://localhost:5001/cart/add-to-cart
+
+Remove From CART API : DELETE
+=====================
+
+
+Get Carts API : GET
+================
+http://localhost:5001/cart/get-carts-data
