@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+}
+body {
+  height: 100vh;
+}
+.notification-design {
+  background-color: green;
+  color: white;
+}
