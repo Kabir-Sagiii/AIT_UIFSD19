@@ -1,0 +1,13 @@
+.container {
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  padding: 20px;
+  margin: 50px auto;
+}
+.container h1 {
+  color: green;
+}
+.container div {
+  margin-bottom: 13px;
+}
