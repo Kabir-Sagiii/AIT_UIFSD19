@@ -1,0 +1,24 @@
+{
+    "users": [
+        {
+            "name": "raj",
+            "gender": "male",
+            "city": "mumbai"
+        },
+        {
+            "name": "vaishnavi",
+            "gender": "female",
+            "city": "mumbai"
+        },
+        {
+            "username": "Rani",
+            "password": "12345",
+            "email": "rani@gmail.com"
+        },
+        {
+            "username": "ruhana",
+            "password": "12345",
+            "email": "ruhana@gmail.com"
+        }
+    ]
+}
